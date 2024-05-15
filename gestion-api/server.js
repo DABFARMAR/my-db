@@ -1,5 +1,17 @@
 import express from 'express'
-import 'dotenv/config'
+const app = express()
+
+
+
+app.get('/',(req,res) => {
+    res.send("hELLO");
+
+})
+
+app.listen(3000)
+
+console.log("Server listen...")
+/*import 'dotenv/config'
 import cors from 'cors'
 import bodyParser from 'body-parser'
 import pool from './config/db.config.js'
@@ -43,4 +55,4 @@ pool.connect((err, client, release) => {
   release()
 })
 
-server.listen(port)
+server.listen(port)*/
